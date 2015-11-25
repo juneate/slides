@@ -1,0 +1,48 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slides {
+    width: 300%; /* 100% * num of chapters */
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transition: all 1s;
+}
+.zoomout {
+    transform: scale(0.2) translateX(-166.666%) translateY(-150%);
+}
+
+
+.chapter {
+    width: 33.33333%; /* 100% / num of chapters */
+    height: 100%;
+    float: left;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font: 10em Helvetica, Arial, sans-serif;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+}
+
+.chapter:nth-child(1) .slide {
+    background-color: #DD5755;
+}
+.chapter:nth-child(2) .slide {
+    background-color: #9FDD8C;
+}
+.chapter:nth-child(3) .slide {
+    background-color: #86A5DD;
+}
+
+
+
